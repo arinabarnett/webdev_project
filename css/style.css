@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 3px;
   
-  background-color: rgb(71, 198, 248);
+  background-color: rgb(133, 203, 250);
   opacity: 0;
 
   position: absolute;
@@ -200,7 +200,7 @@ justify-content: space-between;
   width: 70px;
   height: 3px;
   
-  background-color: rgb(253, 59, 11);
+  background-color: rgb(109, 216, 248);
   position: absolute;
   top: -3px;
   left: 0;
@@ -247,7 +247,7 @@ justify-content: space-between;
  width: 60px;
  height: 3px;
  margin: 30px auto;
- background-color: rgb(253, 59, 11);
+ background-color: rgb(14, 177, 253);
 }
 
 .section__text {
@@ -258,29 +258,93 @@ justify-content: space-between;
 /* About */
 
 .about {
+  margin-top: 80px;
   display: flex;
   justify-content: space-between;
 }
 
 .about__item {
-  width: 400px;
+  width: 380px;
+  position: relative;
+
+  background-color: #77cafa;
 }
 
-.about__item:hover .about__img img {
-  transform: translate3d(-1px, -1px, 0);
-}
-
-.about__item:hover .about__img img{
-  opacity: .3;
+.about__item:hover .about__img {
+ transform: translate3d(-10px, -10px, 0);
   }
 
-.about__img {
-  background: linear-gradient(to bottom, #a5eef8, #cc99f5);
+.about__item:hover .about__img img {
+  opacity: .1;
+}
 
-  transition: transform .1s linear;
+.about__item:hover .about__text {
+opacity: 1;
+}
+
+.about__img {
+  background: linear-gradient(to bottom, #140f0f, #16140b);
+
+  transition: transform .2s linear;
 }
 
 .about__img img {
   display: block;
   transition: opacity .1s linear;
+}
+
+.about__text {
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800px;
+  text-align: center;
+  opacity: 0;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, -50%, 0);
+
+  transition: opacity .2s linear;
+}
+
+/* Statistics */
+
+.statistics {
+  background: 
+  url("../images/gold.png") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.stat {
+  display: flex;
+}
+
+.stat__item {
+  flex: 1 1 0;
+  padding: 70px 25px;
+
+  border-left: 1px solid #b5eae0;
+  text-align: center;
+  color: #fff;
+}
+
+.stat__item:last-child {
+  border-right: 1px solid #b5eae0;
+}
+
+.stat__counter {
+  margin-bottom: 10px;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stat__text {
+  font-size: 14px;
+  text-transform: uppercase;
 }
