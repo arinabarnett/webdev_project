@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1;
+  color: #fff
 }
 
 .intro__title::after {
@@ -347,4 +348,38 @@ opacity: 1;
 .stat__text {
   font-size: 14px;
   text-transform: uppercase;
+}
+
+/* Products */ 
+
+.products {
+  padding: 70px 20px;
+}
+
+.product__item {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+.products::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.products button {
+  border: none;
+  outline: 0;
+  padding: 6px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 25px;
+}
+
+.products button:hover {
+  opacity: 0.7;
 }
